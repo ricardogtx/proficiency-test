@@ -46,16 +46,19 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                       <li>
-                          <a href="/home">Home</a>
+                          <%=link_to ("Home"),root_path, :target => "_self"%>
                       </li>
                       <li>
-                          <a href="/classrooms">Salas</a>
+                          <%=link_to ("Salas"),classrooms_path, :target => "_self"%>
+
                       </li>
                       <li>
-                          <a href="/students">Estudantes</a>
+                          <%=link_to ("Estudantes"),students_path, :target => "_self"%>
+
                       </li>
                       <li>
-                          <a href="/courses">Cursos</a>
+                          <%=link_to ("Estudantes"),courses_path, :target => "_self"%>
+
                       </li>
                       <li>
                           <a href="https://github.com/ricardogtx">Contact</a>
