@@ -126,3 +126,4 @@ RSpec.describe CourseController, :type => :controller do
         expect(response).to redirect_to(courses_url)
       end
 end
+end
