@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
+ruby "2.2.1"
 
 gem 'rails', '4.1.4'
 
@@ -21,6 +22,7 @@ gem 'rails-assets-angular-animate', '1.2.14'
 gem 'rails-assets-angular-i18n', '1.2.14'
 gem 'rails-assets-restangular', '~> 1.3.1'
 gem 'rails-assets-lodash', '~> 2.4.1'
+gem 'rails_12factor'
 
 gem 'simple_form', '~> 3.0.2'
 gem 'haml', '~> 4.0.4'
