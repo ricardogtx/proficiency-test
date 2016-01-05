@@ -1,4 +1,4 @@
-class StudentController < ApplicationController
+class StudentsController < ApplicationController
 
  before_action :set_student, only: [:show, :edit, :update, :destroy]
 
@@ -56,5 +56,7 @@ private
   def student_params
     params.require(:student).permit(:name, :register_number, :status )
   end
+
+
 
 end
