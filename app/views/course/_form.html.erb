@@ -1,0 +1,18 @@
+<%= form_for(@course) do |f| %>
+
+  <div class="field">
+    <%= f.label "Nome" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label "Descrição" %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label "Status" %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
