@@ -55,7 +55,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'pry-rails'
 end
-
+  gem "twitter-bootstrap-rails"
 group :test do
   gem 'capybara', '~> 2.3.0'
   gem 'launchy', '~> 2.4.2'

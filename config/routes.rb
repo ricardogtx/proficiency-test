@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :classrooms
-
+  resources :home
+  root 'home#index'
   resources :students
   resources :courses
   # The priority is based upon order of creation: first created -> highest priority.

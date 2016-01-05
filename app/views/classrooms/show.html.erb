@@ -1,15 +1,17 @@
-<div class="col-md-1"></div>
-<div class="container">
-  <div class="col-md-10" id="show-model-container">
-    <p id="notice" class="alert-success"><%= notice %></p>
-    This classroom was created on <%= @classroom.entry_at.strftime('%A, %d %B %Y %H:%M:%S') %>
-    <p>Student: <%= @classroom.student.name %></p>
+<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+          <div class="container">
+            <div class="col-md-1"></div>
+            <div id="table-responsive" class="col-md-10">
+              <p id="notice" class="alert-success"><%= notice %></p>
+              Essa sala foi criada em <%= @classroom.entry_at.strftime('%A, %d %B %Y %H:%M:%S') %>
+              <p><h3>Estudante:</h3> <%= @classroom.student.name %></p>
 
-    <p>Course: <%= @classroom.course.name %></p>
-    <%= link_to 'Back', classrooms_path, class: "btn btn-info pull-right" %>
-  </div>
-</div>
-<div class="col-md-1"></div>
-
-
-
+              <p><h3>Cursos:</h3> <%= @classroom.course.name %></p>
+              <%= link_to 'Back', classrooms_path, class: "btn btn-info pull-right" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
